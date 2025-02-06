@@ -3,11 +3,11 @@ The difference between object-oriented programming (OOP) and procedural programm
 
 Object-Oriented Programming (OOP) organizes code around **objects** that represent real-world entities, whereas procedural programming structures code as **a sequence of instructions (functions).**
 
- - **OOP Advantage**: Code is more **modular, reusable, easy to maintain**.
+- **OOP Advantage**: Code is more **modular, reusable, easy to maintain**.
 
- - **Procedural** (C style): each function is organized in `function`, all data is stored globally.
+- **Procedural** (C style): each function is organized in `function`, all data is stored globally.
 
- - **Object Oriented** (Python/Java): data is organized in `class`, data and behavior are bound together.
+- **Object Oriented** (Python/Java): data is organized in `class`, data and behavior are bound together.
 ## **1. The four main features of OOP**
 
 | Characterization  | Explanation                        | Code example           |
@@ -109,10 +109,10 @@ db.connect()  # ✅ "Connecting to MySQL..."
 ✅ **Applicable Scenarios:**
 
 - **Dependency Injection (DI)**
-- **Plugin System** 
+- **Plugin System**
 - **Different Data Sources (SQL, NoSQL, File) Handling**
 
-------
+
 
 ### **2.3 Observer**
 
@@ -156,7 +156,7 @@ subject.notify("Event happened!")  # ✅ Both observers are notified
 - **Message subscription system**
 - **Data synchronization (e.g., Stock Market monitoring)**
 
-------
+
 
 ## 3. Summary
 
