@@ -23,3 +23,36 @@ python --version
 which python  # Linux/macOS
 where python  # Windows
 ```
+### 2. React
+```bash
+mkdir web
+cd web
+```
+```bash
+# Create a React project (React 19 by default)
+npx create-react-app frontend --use-npm --template cra-template
+```
+```bash
+# Go into the frontend directory and uninstall React19, manually install React18
+cd frontend
+npm uninstall react react-dom
+npm install react@18 react-dom@18
+
+# Check Version
+npm list react react-dom
+# react@18.x.x
+# react-dom@18.x.x
+```
+```bash
+# Install web-vitals manually if get an error.
+npm install web-vitals
+```
+```bash
+# Start React
+npm start
+```
+```bash
+# Compiled successfully!
+# You can now view frontend in the browser.
+# Local: http://localhost:3000
+```
