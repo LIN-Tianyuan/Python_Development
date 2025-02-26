@@ -6,7 +6,8 @@
 ## [5.Pandas](./docs/05_pandas.md)
 ## [6.FastAPI](./docs/06_fastapi.md)
 ## [7.SQL](./docs/07_sql.md)
-
+## [8.Git](./docs/08_git.md)
+## [9.Tailwind CSS](./docs/09_tailwind_css.md)
 ## Important notice
 ### 1. Virtual Environment
 ```bash
@@ -55,4 +56,22 @@ npm start
 # Compiled successfully!
 # You can now view frontend in the browser.
 # Local: http://localhost:3000
+```
+### 3. Checking the shell type
+### 3. Modify the Python version path
+```bash
+echo $SHELL
+```
+If /bin/zsh is returned, using zsh and need to modify ~/.zshrc.
+
+If /bin/bash is returned, using bash and need to modify ~/.bashrc or ~/.bash_profile.
+### 4. Modify the Python version path
+```bash
+nano ~/.bash_profile
+```
+```bash
+export PATH="/usr/local/bin:$PATH"
+```
+```bash
+source ~/.bashrc
 ```

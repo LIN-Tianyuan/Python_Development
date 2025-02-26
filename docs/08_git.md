@@ -22,7 +22,7 @@ git branch -d feature-branch
 git push origin --delete feature-branch
 ```
 
-📌 **关键点**
+📌 **Key point**
 
 - `git checkout -b` → create and switch branches
 - `git merge` → merge branches
@@ -51,7 +51,7 @@ main <------ official online branch
 
 ✅ **GitHub Flow for** CI/CD, direct `main` development + PR
 
-## **🔥 2. Resolve Merge Conflicts**
+## **2. Resolve Merge Conflicts**
 
 ------
 
@@ -111,14 +111,14 @@ git rebase main
 
 🚀 **Best practices**:
 
-- `rebase` for **feature branching to synchronize master branches** | 🚀 **best practices**.
+- `rebase` for **feature branching to synchronize master branches**.
 - `merge` for **feature branches that eventually merge into `main`**.
 
-## **🔥 3. PR (Pull Request) Code review**
+## **3. PR (Pull Request) Code review**
 
 ------
 
-A **Pull Request (PR, pull request)** is a **code merge mechanism** provided by **Git platforms (e.g., Bitbucket, GitHub, GitLab)** to allow developers**to commit changes before merging the code and to allow team members to perform a Code Review**.
+A **Pull Request (PR, pull request)** is a **code merge mechanism** provided by **Git platforms (e.g., Bitbucket, GitHub, GitLab)** to allow developers **to commit changes before merging the code and to allow team members to perform a Code Review**.
 ### **✅ PR code review best practices**
 
 | **Best Practices** | **Interpretation** |
@@ -140,7 +140,7 @@ A **Pull Request (PR, pull request)** is a **code merge mechanism** provided by 
 
 ------
 
-### **✅ Request Changes in PR **
+### **✅ Request Changes in PR**
 
 If there is a problem with the code, **Review can “Request Changes ”**:
 
@@ -153,7 +153,7 @@ If there is a problem with the code, **Review can “Request Changes ”**:
  - ✅ Give **Optimization suggestions**
  - ✅ Explain **why it was changed**
 
-How do I resolve Git merge conflicts?
+How do we resolve Git merge conflicts?
 
  - **When Git has a merge conflict, we run `git status` to find the conflict file**. Then we manually edit the file, remove the `<<<< HEAD` tag, select the correct code version, and finally `git add` and commit the changes.
 
