@@ -58,7 +58,6 @@ npm start
 # Local: http://localhost:3000
 ```
 ### 3. Checking the shell type
-### 3. Modify the Python version path
 ```bash
 echo $SHELL
 ```
@@ -74,4 +73,28 @@ export PATH="/usr/local/bin:$PATH"
 ```
 ```bash
 source ~/.bashrc
+```
+### 5. Anaconda and Jupyter book
+#### 5.1 Check JupyterBook running Python
+```python
+import sys
+print(sys.executable)
+
+# /opt/anaconda3/envs/DataAnalysis/bin/python
+```
+#### 5.2 Check pip and python
+```bash
+which pip
+which python
+
+# /opt/anaconda3/envs/DataAnalysis/bin/python  ✅
+# /opt/anaconda3/envs/DataAnalysis/bin/pip     ✅
+```
+#### 5.3 Get the Python3 kernel to use DataAnalysis
+```bash
+conda activate DataAnalysis
+
+jupyter notebook
+
+# Choose Python3 Kernel
 ```
