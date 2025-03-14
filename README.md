@@ -98,3 +98,23 @@ jupyter notebook
 
 # Choose Python3 Kernel
 ```
+### 6. Jupyter notebook Chinese show
+```python
+import matplotlib.pyplot as plt
+plt.rcParams['font.family']='SimHei'
+plt.rcParams['axes.unicode_minus'] = False # 用来正常显示负号
+```
+### 7. Environment variable
+ - Create .env file
+```ini
+LANGSMITH_TRACING=true
+LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+LANGSMITH_API_KEY="your-api-key"
+LANGSMITH_PROJECT="pr-standard-loincloth-39"
+OPENAI_API_KEY="your-openai-api-key"
+```
+ - Autoload .env in Python
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
