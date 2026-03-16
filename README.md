@@ -102,7 +102,7 @@ jupyter notebook
 ```python
 import matplotlib.pyplot as plt
 plt.rcParams['font.family']='SimHei'
-plt.rcParams['axes.unicode_minus'] = False # 用来正常显示负号
+plt.rcParams['axes.unicode_minus'] = False # Used to display the negative sign normally
 ```
 ### 7. Environment variable
  - Create .env file
@@ -118,3 +118,53 @@ OPENAI_API_KEY="your-openai-api-key"
 from dotenv import load_dotenv
 load_dotenv()
 ```
+### 8. Current Project Workflow
+ - Set up the local project → Initialize Git → Connect to the GitHub repository → Commit and push
+```bash
+cd mon-projet
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/user_name/mon-projet.git
+git push -u origin main
+```
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# virtual environment
+venv/
+.env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# system
+.DS_Store
+
+# logs
+*.log
+
+# build
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+```
+ - Remove tracked files from the Git cache
+```bash
+git rm -r --cached .
+
+git add .
+git commit -m "Add .gitignore and clean tracked files"
+git push -u origin main
+```
+
